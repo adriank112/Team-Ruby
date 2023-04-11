@@ -91,28 +91,37 @@ $current_page_id = get_the_ID();
 
 $event_date = '';
 
-if ( $current_page_id == 57 ) {
-  $event_type = 'tournament';
-  $event_date = '>';
-} elseif ( $current_page_id == 59 ) {
-  $event_type = 'meetup';
-  $event_date = '>';
-} elseif ( $current_page_id == 133 ) {
-  $event_type = 'meetup';
-  $event_date = '<';
-} elseif ( $current_page_id == 135 ) {
-  $event_type = 'tournament';
-  $event_date = '<';
-} elseif ( $current_page_id == 55 ) {
-    $event_type = array('tournament', 'meetup');
-    $event_date = '<';
-} elseif ( $current_page_id == 53 ) {
-    $event_type = array('tournament', 'meetup');
-    $event_date = '>';
-} else {
-  $event_type = '';
-  $event_date = '';
+switch ($current_page_id) {
+    case 57:
+        $event_type = 'tournament';
+        $event_date = '>';
+        break;
+    case 59:
+        $event_type = 'meetup';
+        $event_date = '>';
+        break;
+    case 133:
+        $event_type = 'meetup';
+        $event_date = '<';
+        break;
+    case 135:
+        $event_type = 'tournament';
+        $event_date = '<';
+        break;
+    case 55:
+        $event_type = array('tournament', 'meetup');
+        $event_date = '<';
+        break;
+    case 53:
+        $event_type = array('tournament', 'meetup');
+        $event_date = '>';
+        break;
+    default:
+        $event_type = '';
+        $event_date = '';
+        break;
 }
+
 ?>
 
 <div id="primary" class="content-area">
