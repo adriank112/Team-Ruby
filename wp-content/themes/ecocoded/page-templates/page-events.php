@@ -48,11 +48,9 @@ get_header();
 
   .event-title a:hover {
     text-decoration: none;
+    color:purple;
   }
 
-  .event-title + .event-title {
-    margin-top: 40px;
-  }
 </style>
 
 <?php
