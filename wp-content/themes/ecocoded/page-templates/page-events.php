@@ -12,7 +12,7 @@ get_header();
   .event-date {
     display: inline-block;
     padding: 5px 10px;
-    background-color: purple;
+    background-color: #C70039;
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -23,7 +23,7 @@ get_header();
   .event-type {
     display: inline-block;
     padding: 5px 10px;
-    background-color: green;
+    background-color: purple;
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -48,7 +48,7 @@ get_header();
 
   .event-title a:hover {
     text-decoration: none;
-    color:purple;
+    color:#C70039;
   }
 
 </style>
@@ -170,4 +170,3 @@ $args = array(
 </div>
 
 <?php get_footer(); ?>
-
